@@ -12,10 +12,12 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var UserEmailTextField: UILabel!
     
+    var email = " "
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let email = UserEmailTextField.text
+        UserEmailTextField.text = email
 
         // Do any additional setup after loading the view.
     }

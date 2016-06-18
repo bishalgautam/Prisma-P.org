@@ -90,16 +90,17 @@ class LoginViewController: UIViewController {
                 
                 print("result: \(resultValue)")
                 
-                if(resultValue == "success"){
+                if(resultValue == "Success"){
                     
                     //login successfull 
                     
                     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedin")
                     NSUserDefaults.standardUserDefaults().synchronize()
-                    
-                    //self.presentViewController(MainViewController, animated: true, completion: nil)
-                    self.performSegueWithIdentifier("onLoginSuccess", sender: nil)
-                    
+                    NSOperationQueue.mainQueue().addOperationWithBlock {
+//                        self.performSegue("onLoginSuccess")
+                   
+                    self.performSegueWithIdentifier("onLoginSuccess", sender: self)
+                    }
                 }
                 
 //                var isUserLoggedin: Bool = false;
@@ -142,6 +143,7 @@ class LoginViewController: UIViewController {
         
     }
     
+    
     func displayAlertMessage(userMessage : String){
         
         let myAlert = UIAlertController(title: "ALert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
@@ -152,24 +154,31 @@ class LoginViewController: UIViewController {
         
         self.presentViewController(myAlert, animated: true, completion: nil)
     }
+    
+    // calling a segue from inside a closure
+    
+   
+    func performSegue(identifier:String){
+        self.performSegueWithIdentifier(identifier, sender: self)
+    }
 
     
     
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-//      Get the new view controller using segue.destinationViewController.
-//      Pass the selected object to the new view controller.
-//        if segue.identifier == "onLoginSuccess" {
-//            let destinationVC = segue.destinationViewController as? MainViewController {
-//
-//           }
-//
-//
-//     }
-}
+        //      Get the new view controller using segue.destinationViewController.
+        //      Pass the selected object to the new view controller.
+        if segue.identifier == "onLoginSuccess" {
+            if let destinationVC = segue.destinationViewController as? MainViewController {
+                destinationVC.email = userNameTextField.text!
+            }
+            
+            
+        }
+    }
 
 
 }
