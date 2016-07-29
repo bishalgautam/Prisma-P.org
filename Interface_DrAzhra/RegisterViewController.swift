@@ -16,6 +16,9 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
+    @IBAction func onAlreadyHaveAccount(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

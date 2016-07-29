@@ -14,7 +14,56 @@
 		2C0E08661D085E660041E3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0E08641D085E660041E3DC /* LaunchScreen.storyboard */; };
 		2C0E086E1D0A5BAE0041E3DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E086D1D0A5BAE0041E3DC /* RegisterViewController.swift */; };
 		2C0E08701D0A5BBD0041E3DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E086F1D0A5BBD0041E3DC /* MainViewController.swift */; };
+		2C24B7341D3585A200C09AA7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24B7331D3585A200C09AA7 /* Data.swift */; };
+		2CC46B0F1D2BFDF000F6C16E /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC46B0C1D2BFC6400F6C16E /* ResearchKit.framework */; };
+		2CC46B101D2BFDF000F6C16E /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC46B0C1D2BFC6400F6C16E /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CC46B151D2C00E300F6C16E /* consentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B141D2C00E300F6C16E /* consentDocument.swift */; };
+		2CC46B171D2C595900F6C16E /* consentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B161D2C595900F6C16E /* consentTask.swift */; };
+		2CC46B1D1D2DA11C00F6C16E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B1C1D2DA11C00F6C16E /* WelcomeViewController.swift */; };
+		2CC46B211D2EC2B600F6C16E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B201D2EC2B600F6C16E /* SubmitViewController.swift */; };
+		2CC46B291D2F3D1400F6C16E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B281D2F3D1400F6C16E /* TableViewController.swift */; };
+		2CC46B2C1D2F49E500F6C16E /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B2B1D2F49E400F6C16E /* DataCell.swift */; };
+		2CC46B2E1D2F646400F6C16E /*  SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC46B2D1D2F646400F6C16E /*  SurveyTask.swift */; };
+		2F9EEF4DF1A596158558E390 /* Pods_Interface_DrAzhra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506940F50EAC9E153289B0DF /* Pods_Interface_DrAzhra.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CC46B0B1D2BFC6400F6C16E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		2CC46B0D1D2BFC6400F6C16E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		2CC46B111D2BFDF000F6C16E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CC46B131D2BFDF000F6C16E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CC46B101D2BFDF000F6C16E /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C0E08581D085E660041E3DC /* Interface_DrAzhra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interface_DrAzhra.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +75,18 @@
 		2C0E08671D085E660041E3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0E086D1D0A5BAE0041E3DC /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2C0E086F1D0A5BBD0041E3DC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2C24B7331D3585A200C09AA7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		2CC46B141D2C00E300F6C16E /* consentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = consentDocument.swift; sourceTree = "<group>"; };
+		2CC46B161D2C595900F6C16E /* consentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = consentTask.swift; sourceTree = "<group>"; };
+		2CC46B1C1D2DA11C00F6C16E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2CC46B201D2EC2B600F6C16E /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		2CC46B281D2F3D1400F6C16E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2CC46B2B1D2F49E400F6C16E /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		2CC46B2D1D2F646400F6C16E /*  SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " SurveyTask.swift"; sourceTree = "<group>"; };
+		506940F50EAC9E153289B0DF /* Pods_Interface_DrAzhra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Interface_DrAzhra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55ACB4ED27BE9A027C8B1E68 /* Pods-Interface_DrAzhra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interface_DrAzhra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Interface_DrAzhra/Pods-Interface_DrAzhra.debug.xcconfig"; sourceTree = "<group>"; };
+		810D404F8BF6465327A9C129 /* Pods-Interface_DrAzhra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interface_DrAzhra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Interface_DrAzhra/Pods-Interface_DrAzhra.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +94,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC46B0F1D2BFDF000F6C16E /* ResearchKit.framework in Frameworks */,
+				2F9EEF4DF1A596158558E390 /* Pods_Interface_DrAzhra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130910FF420D751CFF712BB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55ACB4ED27BE9A027C8B1E68 /* Pods-Interface_DrAzhra.debug.xcconfig */,
+				810D404F8BF6465327A9C129 /* Pods-Interface_DrAzhra.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2C0E084F1D085E660041E3DC = {
 			isa = PBXGroup;
 			children = (
+				2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */,
 				2C0E085A1D085E660041E3DC /* Interface_DrAzhra */,
 				2C0E08591D085E660041E3DC /* Products */,
+				130910FF420D751CFF712BB9 /* Pods */,
+				BC57C455D08384778D27A973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +133,8 @@
 		2C0E085A1D085E660041E3DC /* Interface_DrAzhra */ = {
 			isa = PBXGroup;
 			children = (
+				2C24B72E1D35851E00C09AA7 /* models */,
+				2CC46B2A1D2F49BD00F6C16E /* Views */,
 				2CD36CDC1D10D45B002A2804 /* view controllers */,
 				2C0E085B1D085E660041E3DC /* AppDelegate.swift */,
 				2C0E085F1D085E660041E3DC /* Main.storyboard */,
@@ -68,14 +145,61 @@
 			path = Interface_DrAzhra;
 			sourceTree = "<group>";
 		};
+		2C24B72E1D35851E00C09AA7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2C24B7331D3585A200C09AA7 /* Data.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		2CC46B061D2BFC6400F6C16E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CC46B0C1D2BFC6400F6C16E /* ResearchKit.framework */,
+				2CC46B0E1D2BFC6400F6C16E /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CC46B191D2D604500F6C16E /* researchKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CC46B161D2C595900F6C16E /* consentTask.swift */,
+				2CC46B2D1D2F646400F6C16E /*  SurveyTask.swift */,
+				2CC46B141D2C00E300F6C16E /* consentDocument.swift */,
+			);
+			name = researchKit;
+			sourceTree = "<group>";
+		};
+		2CC46B2A1D2F49BD00F6C16E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CC46B2B1D2F49E400F6C16E /* DataCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		2CD36CDC1D10D45B002A2804 /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2C0E085D1D085E660041E3DC /* LoginViewController.swift */,
+				2CC46B201D2EC2B600F6C16E /* SubmitViewController.swift */,
+				2CC46B1C1D2DA11C00F6C16E /* WelcomeViewController.swift */,
 				2C0E086D1D0A5BAE0041E3DC /* RegisterViewController.swift */,
 				2C0E086F1D0A5BBD0041E3DC /* MainViewController.swift */,
+				2CC46B281D2F3D1400F6C16E /* TableViewController.swift */,
+				2CC46B191D2D604500F6C16E /* researchKit */,
 			);
 			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		BC57C455D08384778D27A973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				506940F50EAC9E153289B0DF /* Pods_Interface_DrAzhra.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,13 +209,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C0E086A1D085E660041E3DC /* Build configuration list for PBXNativeTarget "Interface_DrAzhra" */;
 			buildPhases = (
+				C26F0E3430C50C9EDD0A0AF2 /* 📦 Check Pods Manifest.lock */,
 				2C0E08541D085E660041E3DC /* Sources */,
 				2C0E08551D085E660041E3DC /* Frameworks */,
 				2C0E08561D085E660041E3DC /* Resources */,
+				2CC46B131D2BFDF000F6C16E /* Embed Frameworks */,
+				D59CC2E5B090F00FDBA3C3BD /* 📦 Embed Pods Frameworks */,
+				DAB6F4CFEE71FDF3ACCDEC1D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CC46B121D2BFDF000F6C16E /* PBXTargetDependency */,
 			);
 			name = Interface_DrAzhra;
 			productName = Interface_DrAzhra;
@@ -125,12 +254,35 @@
 			mainGroup = 2C0E084F1D085E660041E3DC;
 			productRefGroup = 2C0E08591D085E660041E3DC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2CC46B061D2BFC6400F6C16E /* Products */;
+					ProjectRef = 2CC46B051D2BFC6400F6C16E /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2C0E08571D085E660041E3DC /* Interface_DrAzhra */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2CC46B0C1D2BFC6400F6C16E /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 2CC46B0B1D2BFC6400F6C16E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CC46B0E1D2BFC6400F6C16E /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 2CC46B0D1D2BFC6400F6C16E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2C0E08561D085E660041E3DC /* Resources */ = {
@@ -145,19 +297,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C26F0E3430C50C9EDD0A0AF2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D59CC2E5B090F00FDBA3C3BD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Interface_DrAzhra/Pods-Interface_DrAzhra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB6F4CFEE71FDF3ACCDEC1D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Interface_DrAzhra/Pods-Interface_DrAzhra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C0E08541D085E660041E3DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC46B211D2EC2B600F6C16E /* SubmitViewController.swift in Sources */,
 				2C0E086E1D0A5BAE0041E3DC /* RegisterViewController.swift in Sources */,
+				2CC46B171D2C595900F6C16E /* consentTask.swift in Sources */,
+				2CC46B2E1D2F646400F6C16E /*  SurveyTask.swift in Sources */,
+				2CC46B2C1D2F49E500F6C16E /* DataCell.swift in Sources */,
 				2C0E085E1D085E660041E3DC /* LoginViewController.swift in Sources */,
+				2CC46B151D2C00E300F6C16E /* consentDocument.swift in Sources */,
+				2C24B7341D3585A200C09AA7 /* Data.swift in Sources */,
 				2C0E085C1D085E660041E3DC /* AppDelegate.swift in Sources */,
 				2C0E08701D0A5BBD0041E3DC /* MainViewController.swift in Sources */,
+				2CC46B291D2F3D1400F6C16E /* TableViewController.swift in Sources */,
+				2CC46B1D1D2DA11C00F6C16E /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CC46B121D2BFDF000F6C16E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 2CC46B111D2BFDF000F6C16E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2C0E085F1D085E660041E3DC /* Main.storyboard */ = {
@@ -266,8 +482,10 @@
 		};
 		2C0E086B1D085E660041E3DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ACB4ED27BE9A027C8B1E68 /* Pods-Interface_DrAzhra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Interface_DrAzhra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SSSL.Interface-DrAzhra";
@@ -277,8 +495,10 @@
 		};
 		2C0E086C1D085E660041E3DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810D404F8BF6465327A9C129 /* Pods-Interface_DrAzhra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Interface_DrAzhra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SSSL.Interface-DrAzhra";

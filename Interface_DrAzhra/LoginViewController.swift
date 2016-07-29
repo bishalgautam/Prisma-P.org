@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "UF")!)
+       // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "UF")!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,6 +96,20 @@ class LoginViewController: UIViewController {
                     
                     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedin")
                     NSUserDefaults.standardUserDefaults().synchronize()
+                    
+//                    dispatch_async(dispatch_get_main_queue()) {
+//                        
+//                        let myView = self.storyboard?.instantiateViewControllerWithIdentifier("MainView") as! MainViewController
+//                        
+//                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//                        
+//                        appDelegate.window!.rootViewController = myView
+//                        appDelegate.window!.makeKeyAndVisible()
+//
+//                        
+//                    }
+
+
                     NSOperationQueue.mainQueue().addOperationWithBlock {
 //                        self.performSegue("onLoginSuccess")
                    

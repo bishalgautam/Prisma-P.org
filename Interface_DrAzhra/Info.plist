@@ -46,18 +46,41 @@
     
     <key>NSAppTransportSecurity</key>
     <dict>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>localhost</key>
-            <dict>
-                <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                <true/>
-                <key>NSExceptionMinimumTLSVersion</key>
-                <string>TLSv1.1</string>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-            </dict>
-        </dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
     </dict>
+
+	
+<!--    <key>NSAppTransportSecurity</key>-->
+<!--	<dict>-->
+<!--		<key>NSExceptionDomains</key>-->
+<!--		<dict>-->
+<!--			<key>localhost</key>-->
+<!--			<dict>-->
+<!--				<key>NSExceptionAllowsInsecureHTTPLoads</key>-->
+<!--				<true/>-->
+<!--				<key>NSExceptionMinimumTLSVersion</key>-->
+<!--				<string>TLSv1.1</string>-->
+<!--				<key>NSIncludesSubdomains</key>-->
+<!--				<true/>-->
+<!--			</dict>-->
+<!--		</dict>-->
+<!--	</dict>-->
+<!--    -->
+<!--    <key>NSAppTransportSecurity</key>-->
+<!--    <dict>-->
+<!--        <key>NSExceptionDomains</key>-->
+<!--        <dict>-->
+<!--            <key>deepc04.acis.ufl.edu</key>-->
+<!--            <dict>-->
+<!--                <key>NSExceptionAllowsInsecureHTTPLoads</key>-->
+<!--                <true/>-->
+<!--                <key>NSExceptionMinimumTLSVersion</key>-->
+<!--                <string>TLSv1.1</string>-->
+<!--                <key>NSIncludesSubdomains</key>-->
+<!--                <true/>-->
+<!--            </dict>-->
+<!--        </dict>-->
+<!--    </dict>-->
 </dict>
 </plist>
