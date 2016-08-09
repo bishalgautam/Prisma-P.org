@@ -1,3 +1,3 @@
 # Shands-UF
 
- -- an app for doctors!!1
+ App to help Drs.
